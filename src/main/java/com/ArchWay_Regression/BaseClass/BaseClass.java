@@ -43,6 +43,7 @@ public class BaseClass {
 	public static Properties prop,prop2;
 	@BeforeSuite
 	public void setUp() throws IOException {
+		
 		prop = readPropertiesFile("C:\\Users\\APoyil\\Git\\New folder\\ArchWay_Regression\\src\\main\\java\\com\\ArchWay_Regression\\BaseClass\\config.properties");
 		prop2 = readPropertiesFile("C:\\Users\\APoyil\\Git\\New folder\\ArchWay_Regression\\src\\main\\java\\com\\ArchWay_Regression\\BaseClass\\Confidential.properties");		
 		//htmlReporter = new ExtentHtmlReporter("\\Reports\\LastRunReport.html");
