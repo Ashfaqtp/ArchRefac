@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Regression suite]" parallel="methods">
+  <test name="Regression(failed)" parallel="methods">
+    <classes>
+      <class name="com.ArchWay_Regression.tests.AddProgram">
+        <methods>
+          <include name="TCBundle3"/>
+          <include name="setUp"/>
+          <include name="initialisation"/>
+          <include name="EndOfTestcase"/>
+        </methods>
+      </class> <!-- com.ArchWay_Regression.tests.AddProgram -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [Regression suite] -->
