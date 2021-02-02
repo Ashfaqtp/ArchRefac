@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="108444" started-at="2021-02-02T14:15:19Z" finished-at="2021-02-02T14:17:08Z">
+  <suite name="Default suite" duration-ms="174449" started-at="2021-02-02T14:50:20Z" finished-at="2021-02-02T14:53:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="108444" started-at="2021-02-02T14:15:19Z" finished-at="2021-02-02T14:17:08Z">
+    <test name="Default test" duration-ms="174449" started-at="2021-02-02T14:50:20Z" finished-at="2021-02-02T14:53:14Z">
       <class name="com.ArchWay_Regression.tests.AddProgram">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ArchWay_Regression.tests.AddProgram@394e1a0f]" name="setUp" is-config="true" duration-ms="1607" started-at="2021-02-02T19:45:17Z" finished-at="2021-02-02T19:45:19Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ArchWay_Regression.tests.AddProgram@394e1a0f]" name="setUp" is-config="true" duration-ms="1774" started-at="2021-02-02T20:20:18Z" finished-at="2021-02-02T20:20:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="initialisation(java.lang.reflect.Method)[pri:0, instance:com.ArchWay_Regression.tests.AddProgram@394e1a0f]" name="initialisation" is-config="true" duration-ms="8276" started-at="2021-02-02T19:45:19Z" finished-at="2021-02-02T19:45:27Z">
+        <test-method status="PASS" signature="initialisation(java.lang.reflect.Method)[pri:0, instance:com.ArchWay_Regression.tests.AddProgram@394e1a0f]" name="initialisation" is-config="true" duration-ms="6196" started-at="2021-02-02T20:20:20Z" finished-at="2021-02-02T20:20:26Z">
           <params>
             <param index="0">
               <value>
@@ -22,27 +22,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialisation -->
-        <test-method status="FAIL" signature="TCBundle1()[pri:0, instance:com.ArchWay_Regression.tests.AddProgram@394e1a0f]" name="TCBundle1" duration-ms="100139" started-at="2021-02-02T19:45:27Z" finished-at="2021-02-02T19:47:08Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="TCBundle1()[pri:0, instance:com.ArchWay_Regression.tests.AddProgram@394e1a0f]" name="TCBundle1" duration-ms="168229" started-at="2021-02-02T20:20:26Z" finished-at="2021-02-02T20:23:14Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[chrome not reachable
+              <![CDATA[element click intercepted: Element <i class="fas fa-filter"></i> is not clickable at point (1285, 77). Other element would receive the click: <span class="toast_content__33ufq">...</span>
   (Session info: chrome=87.0.4280.141)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'ARCHVDI112', ip: '10.110.38.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\APoyil\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59935}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 54f7f05c7127e21cd020b8e50be1d61d
-*** Element info: {Using=xpath, value=//button[text()='Save']}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\APoyil\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57506}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 97a17a6f24b5220716980a9e5ea882ce]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i class="fas fa-filter"></i> is not clickable at point (1285, 77). Other element would receive the click: <span class="toast_content__33ufq">...</span>
   (Session info: chrome=87.0.4280.141)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'ARCHVDI112', ip: '10.110.38.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\APoyil\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59935}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 54f7f05c7127e21cd020b8e50be1d61d
-*** Element info: {Using=xpath, value=//button[text()='Save']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\APoyil\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57506}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 97a17a6f24b5220716980a9e5ea882ce
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -53,14 +51,11 @@ Session ID: 54f7f05c7127e21cd020b8e50be1d61d
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.ArchWay_Regression.functions.GenericFunctions.saveButton(GenericFunctions.java:43)
-	at com.ArchWay_Regression.pages.CharacteristicsPage.EditOccupancy(CharacteristicsPage.java:94)
-	at com.ArchWay_Regression.pages.CharacteristicsPage.addDetails(CharacteristicsPage.java:48)
-	at com.ArchWay_Regression.tests.AddProgram.TCBundle1(AddProgram.java:27)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.ArchWay_Regression.pages.LayersPage.AddRatesWithFilter(LayersPage.java:261)
+	at com.ArchWay_Regression.pages.LayersPage.addDetails(LayersPage.java:141)
+	at com.ArchWay_Regression.tests.AddProgram.TCBundle1(AddProgram.java:28)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -88,15 +83,15 @@ Session ID: 54f7f05c7127e21cd020b8e50be1d61d
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCBundle1 -->
-        <test-method status="PASS" signature="EndOfTestcase()[pri:0, instance:com.ArchWay_Regression.tests.AddProgram@394e1a0f]" name="EndOfTestcase" is-config="true" duration-ms="0" started-at="2021-02-02T19:47:08Z" finished-at="2021-02-02T19:47:08Z">
+        <test-method status="PASS" signature="EndOfTestcase()[pri:0, instance:com.ArchWay_Regression.tests.AddProgram@394e1a0f]" name="EndOfTestcase" is-config="true" duration-ms="1" started-at="2021-02-02T20:23:14Z" finished-at="2021-02-02T20:23:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EndOfTestcase -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ArchWay_Regression.tests.AddProgram@394e1a0f]" name="tearDown" is-config="true" duration-ms="533" started-at="2021-02-02T19:47:08Z" finished-at="2021-02-02T19:47:08Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ArchWay_Regression.tests.AddProgram@394e1a0f]" name="tearDown" is-config="true" duration-ms="511" started-at="2021-02-02T20:23:14Z" finished-at="2021-02-02T20:23:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

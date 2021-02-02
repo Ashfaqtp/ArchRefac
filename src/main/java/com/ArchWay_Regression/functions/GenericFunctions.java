@@ -336,7 +336,7 @@ public class GenericFunctions extends BaseClass{
 		By txt_password=By.xpath("//input[@name='passwd']");
 		By btn_signin=By.xpath("//input[@type='submit']");
 		
-		driver.findElement(txt_email).sendKeys(prop2.getProperty("email"));
+		driver.findElement(txt_email).sendKeys(prop.getProperty("email"));
 		driver.findElement(btn_login).click();
 		/*driver.findElement(txt_password).sendKeys(prop2.getProperty("password"));
 		driver.findElement(btn_signin).click();*/

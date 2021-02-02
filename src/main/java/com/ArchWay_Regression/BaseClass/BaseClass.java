@@ -40,7 +40,7 @@ public class BaseClass {
 	public static XSSFSheet sheet = null;
 	public static XSSFRow row = null;
 	public static XSSFCell cell = null;
-	public static Properties prop,prop2;
+	public static Properties prop;
 	@BeforeSuite
 	public void setUp() throws IOException {
 		
@@ -50,8 +50,8 @@ public class BaseClass {
 		projectPath = System.getProperty("user.dir");
 		filepath = projectPath+"\\src\\main\\java\\com\\ArchWay_Regression\\BaseClass\\config.properties";
 		prop = readPropertiesFile(filepath);
-		filepath = projectPath+"\\src\\main\\java\\com\\ArchWay_Regression\\BaseClass\\Confidential.properties";
-		prop2 = readPropertiesFile(filepath);		
+		//filepath = projectPath+"\\src\\main\\java\\com\\ArchWay_Regression\\BaseClass\\Confidential.properties";
+		//prop2 = readPropertiesFile(filepath);		
 		//htmlReporter = new ExtentHtmlReporter("\\Reports\\LastRunReport.html");
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		/*DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy_HH:mm:ss");
