@@ -44,8 +44,8 @@ public class BaseClass {
 	@BeforeSuite
 	public void setUp() throws IOException {
 		
-		prop = readPropertiesFile("C:\\Users\\APoyil\\Git\\New folder\\ArchWay_Regression\\src\\main\\java\\com\\ArchWay_Regression\\BaseClass\\config.properties");
-		prop2 = readPropertiesFile("C:\\Users\\APoyil\\Git\\New folder\\ArchWay_Regression\\src\\main\\java\\com\\ArchWay_Regression\\BaseClass\\Confidential.properties");		
+		prop = readPropertiesFile("C:\\Automation\\ArchRefac\\ArchWay_Regression\\src\\main\\java\\com\\ArchWay_Regression\\BaseClass\\config.properties");
+		prop2 = readPropertiesFile("C:\\Automation\\ArchRefac\\ArchWay_Regression\\src\\main\\java\\com\\ArchWay_Regression\\BaseClass\\Confidential.properties");		
 		//htmlReporter = new ExtentHtmlReporter("\\Reports\\LastRunReport.html");
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		/*DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy_HH:mm:ss");
