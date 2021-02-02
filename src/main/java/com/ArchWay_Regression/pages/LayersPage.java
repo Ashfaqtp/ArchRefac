@@ -80,7 +80,7 @@ public class LayersPage extends GenericFunctions{
 				break;
 			}
 		}
-		waitforSeconds(5);
+		waitforSeconds(8);
 		click(hdr_Layers,"hdr_Layers",driver);
 		setPeril("F", ActiveRow);
 		setPeril("HU", ActiveRow);

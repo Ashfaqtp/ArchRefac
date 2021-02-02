@@ -43,17 +43,24 @@ public class BaseClass {
 	public static Properties prop,prop2;
 	@BeforeSuite
 	public void setUp() throws IOException {
-		prop = readPropertiesFile("C:\\Users\\APoyil\\Git\\New folder\\ArchWay_Regression\\src\\main\\java\\com\\ArchWay_Regression\\BaseClass\\config.properties");
-		prop2 = readPropertiesFile("C:\\Users\\APoyil\\Git\\New folder\\ArchWay_Regression\\src\\main\\java\\com\\ArchWay_Regression\\BaseClass\\Confidential.properties");		
+		
+		String projectPath = null;
+		String filepath = null;
+
+		projectPath = System.getProperty("user.dir");
+		filepath = projectPath+"\\src\\main\\java\\com\\ArchWay_Regression\\BaseClass\\config.properties";
+		prop = readPropertiesFile(filepath);
+		filepath = projectPath+"\\src\\main\\java\\com\\ArchWay_Regression\\BaseClass\\Confidential.properties";
+		prop2 = readPropertiesFile(filepath);		
 		//htmlReporter = new ExtentHtmlReporter("\\Reports\\LastRunReport.html");
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		/*DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy_HH:mm:ss");
 		Date date = new Date();
 		String date1= dateFormat.format(date);*/
-		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "\\Reports\\LastRunReport_" + timeStamp + ".html");
+		htmlReporter = new ExtentHtmlReporter(projectPath + "\\Reports\\Report_" + timeStamp + ".html");
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
-		fis = new FileInputStream(prop.getProperty("excel"));
+		fis = new FileInputStream(projectPath + "\\ExcelDB.xlsx");
 		workbook = new XSSFWorkbook(fis);
 		fis.close();
 

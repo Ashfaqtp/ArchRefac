@@ -10,6 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.server.handler.SendKeys;
 import org.openqa.selenium.By.ByXPath;
 import org.openqa.selenium.JavascriptExecutor;
@@ -358,6 +359,14 @@ public class GenericFunctions extends BaseClass{
 		waitforSeconds(1);
 		driver.findElement(btn_Programs).click();
 		waitforSeconds(2);
+		}
+	public static void BillingPage() throws InterruptedException {
+		WebElement btn_Billing=driver.findElement(By.xpath("//a[text()='Billing']"));
+		Actions builder = new Actions(driver);
+		builder.moveToElement(btn_Billing).perform();
+		waitforSeconds(1);
+		//driver.findElement(btn_Billing).click();
+		//waitforSeconds(2);
 		}
 	public static void AddPolicy() throws InterruptedException {
 		InitialSteps();
