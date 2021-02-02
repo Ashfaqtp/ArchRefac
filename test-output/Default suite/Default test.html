@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Feb 02 19:11:08 IST 2021</td>
+<td>Started on:</td><td>Tue Feb 02 19:45:19 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>37 seconds (37794 ms)</td>
+<tr><td>Total time:</td><td>108 seconds (108444 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,14 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.ArchWay_Regression.tests.AddProgram.TCBundle1()'><b>TCBundle1</b><br>Test class: com.ArchWay_Regression.tests.AddProgram</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=87.0.4280.141)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
 System info: host: &apos;ARCHVDI112&apos;, ip: &apos;10.110.38.150&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\APoyil\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 79ea257eb518380c028d00704a61bbcf
-*** Element info: {Using=xpath, value=((//label[contains(text(),&apos;Risk Attachment Type&apos;)]/following::label[text()=&apos;Risk attaching&apos;])[1]/preceding::input)[last()]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\APoyil\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59935}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 54f7f05c7127e21cd020b8e50be1d61d
+*** Element info: {Using=xpath, value=//button[text()=&apos;Save&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -99,9 +98,10 @@ Session ID: 79ea257eb518380c028d00704a61bbcf
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.ArchWay_Regression.functions.GenericFunctions.isSelected(GenericFunctions.java:306)
-	at com.ArchWay_Regression.pages.ContractualInformationPage.addDetails(ContractualInformationPage.java:39)
-	at com.ArchWay_Regression.tests.AddProgram.TCBundle1(AddProgram.java:26)
+	at com.ArchWay_Regression.functions.GenericFunctions.saveButton(GenericFunctions.java:43)
+	at com.ArchWay_Regression.pages.CharacteristicsPage.EditOccupancy(CharacteristicsPage.java:94)
+	at com.ArchWay_Regression.pages.CharacteristicsPage.addDetails(CharacteristicsPage.java:48)
+	at com.ArchWay_Regression.tests.AddProgram.TCBundle1(AddProgram.java:27)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -127,16 +127,15 @@ Session ID: 79ea257eb518380c028d00704a61bbcf
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1808884231", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1808884231'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+</pre></div><a href='#' onClick='toggleBox("stack-trace1069571746", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1069571746'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=87.0.4280.141)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
 System info: host: &apos;ARCHVDI112&apos;, ip: &apos;10.110.38.150&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\APoyil\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 79ea257eb518380c028d00704a61bbcf
-*** Element info: {Using=xpath, value=((//label[contains(text(),&apos;Risk Attachment Type&apos;)]/following::label[text()=&apos;Risk attaching&apos;])[1]/preceding::input)[last()]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\APoyil\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59935}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 54f7f05c7127e21cd020b8e50be1d61d
+*** Element info: {Using=xpath, value=//button[text()=&apos;Save&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -151,9 +150,10 @@ Session ID: 79ea257eb518380c028d00704a61bbcf
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.ArchWay_Regression.functions.GenericFunctions.isSelected(GenericFunctions.java:306)
-	at com.ArchWay_Regression.pages.ContractualInformationPage.addDetails(ContractualInformationPage.java:39)
-	at com.ArchWay_Regression.tests.AddProgram.TCBundle1(AddProgram.java:26)
+	at com.ArchWay_Regression.functions.GenericFunctions.saveButton(GenericFunctions.java:43)
+	at com.ArchWay_Regression.pages.CharacteristicsPage.EditOccupancy(CharacteristicsPage.java:94)
+	at com.ArchWay_Regression.pages.CharacteristicsPage.addDetails(CharacteristicsPage.java:48)
+	at com.ArchWay_Regression.tests.AddProgram.TCBundle1(AddProgram.java:27)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -180,7 +180,7 @@ Session ID: 79ea257eb518380c028d00704a61bbcf
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></div></td>
-<td>30</td>
+<td>100</td>
 <td>com.ArchWay_Regression.tests.AddProgram@394e1a0f</td></tr>
 </table><p>
 </body>
