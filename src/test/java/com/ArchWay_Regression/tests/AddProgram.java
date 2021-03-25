@@ -26,8 +26,8 @@ public class AddProgram extends BaseClass{
 		ContractualInformationPage.addDetails(tc, driver);
 		CharacteristicsPage.addDetails(tc, driver);
 		LayersPage.addDetails(tc, driver);
-		GenericFunctions.GotoPrograms();
-		GenericFunctions.DraftToPendingApproval(tc, driver);
+		//GenericFunctions.GotoPrograms();
+		//GenericFunctions.DraftToPendingApproval(tc, driver);
 		/*GenericFunctions.PendingApprovaltoUWApproved(tc, driver);
 		GenericFunctions.GotoPrograms();
 		GenericFunctions.CreateTestPolicy(tc, driver);*/

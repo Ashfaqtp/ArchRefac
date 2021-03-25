@@ -13,9 +13,19 @@ import com.ArchWay_Regression.pages.ReinsurancePage;
 public class TestCases extends BaseClass{
 
 
-
+/* **********Finaps-1210*************** */
 	@Test(enabled=true)
 	public void TCBilling() throws InterruptedException{
+		String tc="TC_Billing1";	
+		
+		GenericFunctions.InitialSteps();
+		GenericFunctions.BillingPage();
+		Billing.MasterBills(tc, driver);
+		
+	}
+	/* **********Finaps-1378*************** */
+	@Test(enabled=true)
+	public void TCLayers() throws InterruptedException{
 		String tc="TC_Billing1";	
 		
 		GenericFunctions.InitialSteps();

@@ -573,7 +573,8 @@ public class GenericFunctions extends BaseClass{
 	}
 	public static void ShowItemsInTable(int num) {
 		try{
-			driver.findElement(By.xpath("//span[text()=' Show: ']/following::button[@class='popup_button__eM6qw']")).click();
+			driver.findElement(By.xpath("(//span[text()=' Show: ']/following::button[@class='popup_button__eM6qw'])[1]")).click();
+			waitforSeconds(1);
 			driver.findElement(By.xpath("//div[contains(@class,'popup_content__1DJv5 popup_left')]/button[text()="+num+"]")).click();
 			driver.findElement(By.xpath("//span[text()=' Show: ']")).click();
 			waitforSeconds(2);
