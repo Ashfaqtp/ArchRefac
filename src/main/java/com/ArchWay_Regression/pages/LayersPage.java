@@ -63,7 +63,6 @@ public class LayersPage extends GenericFunctions{
 	static By CharacteristicsPerils = By.xpath("(//label[text()='Characteristics & Perils']/following::div)[1]");
 	static By CharacteristicsPerils_Occupancy = By.xpath("(//label[contains(text(),'Characteristics & Perils')]/following::*[contains(text(),'Occupancy')])[1]");
 	static By Values = By.xpath("(//label[text()='Values']/following::div)[1]");
-	static By Values_farm = By.xpath("(//label[contains(text(),'Values')]/following::div[contains(text(),'Farm')])[1]");
 	static By Type_rules = By.xpath("(//label[text()='Type of rules']/following::select)[1]");
 	static By Type_Modifiers = By.xpath("(//label[text()='Type of modifier']/following::select)[1]");
 	static By Modifiervalue = By.xpath("(//label[text()='Modifier value']/following::input)[1]");
@@ -112,8 +111,9 @@ public class LayersPage extends GenericFunctions{
 		SaveChangesWithWait();
 		waitforSeconds(3);
 		click(Generate, "Generate", driver);
-		ShowItemsInTable(100);
 		waitforSeconds(3);
+		ShowItemsInTable(100);
+		waitforSeconds(2);
 		if(getCellData(Sheetname,"TIV Range",ActiveRow).equalsIgnoreCase("Yes")){
 			AddTIV(tc);
 			SaveChangesWithWait();
@@ -345,8 +345,8 @@ public class LayersPage extends GenericFunctions{
 					click(CharacteristicsPerils_Occupancy, "CharacteristicsPerils_Occupancy", driver);
 					waitforSeconds(1);
 					click(Values, "Values", driver);
-					click(Values_farm, "Values_farm", driver);
-					
+					By Values_farm = By.xpath("(//label[contains(text(),'Values')]/following::div[contains(text(),'"+array[0]+"')])[1]");
+					click(Values_farm, "Values_"+array[0], driver);
 					waitforSeconds(1);
 					selectDd(Type_rules, Add_ActiveRow, "Type of rules", driver);
 					selectDd(Type_Modifiers, Add_ActiveRow, "Type of modifier", driver);

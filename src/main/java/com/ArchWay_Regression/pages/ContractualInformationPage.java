@@ -21,7 +21,7 @@ public class ContractualInformationPage extends GenericFunctions{
 	static By dd_certificate	= By.xpath("(//label[contains(text(),'Certificate')]/following::select)[1]");	      
 	static By dd_Terms = By.xpath("(//label[contains(text(),'Terms & Conditions (Optional)')]/following::select)[1]");	
 	
-	public static void addDetails(String tc, WebDriver driver) {
+	public static void addDetails(String tc, WebDriver driver) throws InterruptedException {
 
 		int Rowcount = getRowCount(Sheetname);
 		for (row=1;row<Rowcount;row++)
@@ -52,8 +52,9 @@ public class ContractualInformationPage extends GenericFunctions{
 		clickRd(ActiveRow, "Loss Adjustment Expense (LAE)", driver);
 		clickRd(ActiveRow, "Extra Contractual Obligations (ECO)", driver);
 		clickRd(ActiveRow, "Losses in Excess of Policy Limit (LEPL)", driver);
-		selectDd(dd_CyberExclusion, ActiveRow, "Cyber Exclusion", driver);
-		selectDd(dd_VirusExclusion, ActiveRow, "Virus Exclusion", driver);
+		waitforSeconds(2);
+		selectNewDd(dd_CyberExclusion, ActiveRow, "Cyber Exclusion", driver);
+		selectNewDd(dd_VirusExclusion, ActiveRow, "Virus Exclusion", driver);
 		selectDd(dd_certificate, ActiveRow, "Certificate", driver);
 		selectDd(dd_Terms, ActiveRow, "Terms & Conditions", driver);
 		
